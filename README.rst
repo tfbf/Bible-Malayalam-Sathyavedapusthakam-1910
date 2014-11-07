@@ -2,13 +2,12 @@ Digital Sathyavedapusthakam
 ===========================
 
 This is the content of The Holy Bible translation into Malayalam
-language known as `Sathyavedapusthakam published by The Bible Society
-of India in 1910 <http://ml.wikipedia.org/wiki/സത്യവേദപുസ്തകം>`_.  The
+language known as `Sathyavedapusthakam published by The British and Foreign Bible Society
+in 1910 <https://archive.org/details/Sathyavedapusthakam_1910>`_.  The
 source format used here is `USFM <http://paratext.org/about/usfm>`_.
 The text can be converted to other formats using USFM converters.
 
-* `Project Website <http://sathyavedapusthakam.in>`_
-* `Discussion Group <https://groups.google.com/d/forum/sathyavedapusthakam>`_
+* `Discussion Group <https://groups.google.com/forum/#!forum/tfbfgroup>`_
 
 Installation
 ------------

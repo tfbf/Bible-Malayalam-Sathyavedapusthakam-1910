@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<style>
+			.verse {
+			white-space: nowrap;
+			vertical-align: super;
+			font-size: .6em;
+			line-height: 0;
+			}
+			.heading {
+			font-weight: bold;
+			font-size: 1.4em;
+			text-align: center;
+			}
+		</style>
+	</head>
+<body>
+
+<h1 class="heading">{{ book_name  }}</h1>
+
+{% for items in chapters %}
+<h2 class="heading">{{ items.chapter }}</h2>
+
+{% for item in items.verse %}
+	<p><span class="verse">{{ item.num }}</span>{{ item.text }}</p>
+{% endfor %}
+{% endfor %}

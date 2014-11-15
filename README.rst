@@ -94,3 +94,38 @@ Proofreading
 
 The USFM source text may contain spelling mistakes.  You are welcome
 to proofread the text and report the issues.
+
+SWORD module
+------------
+
+1. Install SWORD utilities and xiphos (Assuming Debian/Ubuntu is used)
+
+   ::
+
+     sudo apt-get install libsword-utils xiphos
+
+2. Convert USFM files to OSIS
+
+   ::
+
+     python scripts/usfm2osis.py svp usfm1910/*.usfm
+
+3. Convert OSIS to SWORD module
+
+   ::
+
+     mkdir -p ~/.sword/modules/texts/ztext/svp/
+     osis2mod ~/.sword/modules/texts/ztext/svp/ svp.osis.xml -v SVP -z z
+
+4. Copy configuration file
+
+   ::
+
+     mkdir -p ~/.sword/mods.d/
+     cp conf/svp.conf ~/.sword/mods.d/
+
+5. Open Xiphos and verify Malayalam Bible is appearing
+
+   ::
+
+     xiphos

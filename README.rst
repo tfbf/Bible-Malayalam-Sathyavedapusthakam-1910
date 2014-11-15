@@ -70,7 +70,7 @@ Debian GNU/Linux and Fedora 20.
    ::
 
      $ cd $HOME
-     $ git clone git@github.com:vsajip/parsley.git
+     $ git clone git@github.com:python-parsley/parsley.git
      $ cd parsley
      $ python setup.py install
 
@@ -79,8 +79,8 @@ Debian GNU/Linux and Fedora 20.
    ::
 
      $ cd $HOME
-     $ git clone git@bitbucket.org:sathyavedapusthakam/svpm.git
-     $ cd svpm
+     $ git clone git@github.com:tfbf/sathyavedapusthakam.git
+     $ cd sathyavedapusthakam
      $ python setup.py develop
 
 6. Now you can run the *svpm* program with various arguments

@@ -117,6 +117,8 @@ SWORD module
      mkdir -p ~/.sword/modules/texts/ztext/svp/
      osis2mod ~/.sword/modules/texts/ztext/svp/ svp.osis.xml -v SVP -z z
 
+   Note: In the old versions of `osis2mod` use `-z` option without `z` argument.
+
 4. Copy configuration file
 
    ::

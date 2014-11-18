@@ -28,14 +28,14 @@ SWORD module
 
    ::
 
-     python scripts/usfm2osis.py svp usfm1910/*.usfm
+     python scripts/usfm2osis.py mal usfm1910/*.usfm
 
 3. Convert OSIS to SWORD module
 
    ::
 
-     mkdir -p ~/.sword/modules/texts/ztext/svp/
-     osis2mod ~/.sword/modules/texts/ztext/svp/ svp.osis.xml -v SVP -z z
+     mkdir -p ~/.sword/modules/texts/ztext/mal/
+     osis2mod ~/.sword/modules/texts/ztext/mal/ mal.osis.xml -v MAL -z z
 
    Note: In the old versions of `osis2mod` use `-z` option without `z` argument.
 
@@ -44,7 +44,7 @@ SWORD module
    ::
 
      mkdir -p ~/.sword/mods.d/
-     cp conf/svp.conf ~/.sword/mods.d/
+     cp conf/mal.conf ~/.sword/mods.d/
 
 5. Open Xiphos and verify Malayalam Bible is appearing
 

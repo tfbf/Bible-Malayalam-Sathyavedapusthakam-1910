@@ -51,3 +51,19 @@ SWORD module
    ::
 
      xiphos
+
+Malayalam Bible in Android
+--------------------------
+
+(Credits for this instruction: Jeesmon Jacob)
+
+1. Install `AndBible <https://play.google.com/store/apps/details?id=net.bible.android.activity>`_ from Google Play Store
+2. Install `ES File Explorer <https://play.google.com/store/apps/details?id=com.estrongs.android.pop>`_ from Google Play Store. This App is for unzipping the module to a folder.
+3. Download `Malayalam SWORD module <http://www.tfbf.in/downloads/mal-0.1.zip>`_ to your device
+4. Open ES File Explorer and navigate to /sdcard folder. It might be the default folder when you open ES File Explorer.
+5. Click device menu -> New -> Folder. Name new folder as jsword (all lowercase)
+6. Navigate to Download folder. That's where the module is downloaded in Step 3.
+7. Long press (not just tap) on mal.zip file. It will pop up a menu with many options. Select "Extract to" menu option.
+8. Select "Choose path" option
+9. Type /sdcard/jsword as the path. Click Ok.
+10. Open AndBible and you will see Malayalam content (Change language to Malayalam from Menu).

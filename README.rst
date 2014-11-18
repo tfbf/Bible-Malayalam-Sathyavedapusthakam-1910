@@ -63,7 +63,7 @@ Malayalam Bible in Android
 4. Open ES File Explorer and navigate to /sdcard folder. It might be the default folder when you open ES File Explorer.
 5. Click device menu -> New -> Folder. Name new folder as jsword (all lowercase)
 6. Navigate to Download folder. That's where the module is downloaded in Step 3.
-7. Long press (not just tap) on mal.zip file. It will pop up a menu with many options. Select "Extract to" menu option.
+7. Long press (not just tap) on mal-0.1.zip file. It will pop up a menu with many options. Select "Extract to" menu option.
 8. Select "Choose path" option
 9. Type /sdcard/jsword as the path. Click Ok.
 10. Open AndBible and you will see Malayalam content (Change language to Malayalam from Menu).

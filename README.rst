@@ -67,3 +67,33 @@ Malayalam Bible in Android
 8. Select "Choose path" option
 9. Type /sdcard/jsword as the path. Click Ok.
 10. Open AndBible and you will see Malayalam content (Change language to Malayalam from Menu).
+
+Malayalam Bible in GNU/Linux
+----------------------------
+
+1. Install Xiphos
+
+   ::
+
+     sudo apt-get install xiphos
+
+2. Download `Malayalam SWORD module <http://www.tfbf.in/downloads/mal-0.1.zip>`_ and extract it inside ``~/.sword`` directory.
+
+   ::
+
+     mkdir ~/.sword
+     cd ~/.sword
+     wget -c http://www.tfbf.in/downloads/mal-0.1.zip
+     unzip mal-0.1.zip
+
+3. Open Xiphos and you will see Malayalam content (Change language to Malayalam from left navigation).
+
+Malayalam Bible in Windows
+--------------------------
+
+1. `Download Meera font <http://download.savannah.gnu.org/releases/smc/fonts/malayalam-fonts-6.1/Meera/Meera.ttf>`_.  To install, just double-click on the ``Meera.ttf`` file.
+2. `Download Xiphos <http://sourceforge.net/projects/gnomesword/files/Xiphos/3.2.2/xiphos-3.2.2-win32.exe/download>`_ and install it. After installation open this program and explore the usage (read Help->Contents).
+
+3. `Download Malayalam SWORD module <http://www.tfbf.in/downloads/mal-0.1.zip>`_ and extract it to ``C:\ProgramData\Sword``. After extracting you should see two folders names ``mods.d`` and ``modules`` inside that.
+4. Edit-Preferences then Fonts->Sizes and Faces and select the ``Malayalam (ml)`` from the ``Font preferences, per language`` menu and you can select the Meera font and save it and close entire application.
+5. Open Xiphos again and you will see Malayalam content (Change language to Malayalam from left navigation).

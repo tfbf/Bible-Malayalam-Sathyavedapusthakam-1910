@@ -91,8 +91,9 @@ Malayalam Bible in GNU/Linux
 Malayalam Bible in Windows
 --------------------------
 
-1. `Download Meera font <http://download.savannah.gnu.org/releases/smc/fonts/malayalam-fonts-6.1/Meera/Meera.ttf>`_.  To install, just double-click on the ``Meera.ttf`` file.
-2. `Download Xiphos <http://sourceforge.net/projects/gnomesword/files/Xiphos/3.2.2/xiphos-3.2.2-win32.exe/download>`_ and install it. After installation open this program and explore the usage (read Help->Contents).
+1. `Download Meera font <http://smc.org.in/downloads/fonts/meera/Meera.ttf>`_.  To install, just double-click on the ``Meera.ttf`` file.
+
+2. `Download Xiphos <http://sourceforge.net/projects/gnomesword/files/Xiphos/4.0.2/xiphos-4.0.2-20150415-win32.exe/download>`_ and install it. After installation open this program and explore the usage (read Help->Contents).
 
 3. `Download Malayalam SWORD module <http://www.tfbf.in/downloads/mal-0.1.zip>`_ and extract it to ``C:\ProgramData\Sword``. After extracting you should see two folders names ``mods.d`` and ``modules`` inside that.
 4. Edit-Preferences then Fonts->Sizes and Faces and select the ``Malayalam (ml)`` from the ``Font preferences, per language`` menu and you can select the Meera font and save it and close entire application.

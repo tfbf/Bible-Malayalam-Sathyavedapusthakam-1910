@@ -3,9 +3,9 @@
 
 from __future__ import print_function, unicode_literals
 
-date = '$Date: 2014-03-15 14:37:51 +0530 (Sat, 15 Mar 2014) $'
-rev = '$Rev: 484 $'
-id = '$Id: usfm2osis.py 484 2014-03-15 09:07:51Z refdoc $'
+date = '$Date: 2015-02-18 13:57:48 +0530 (Wed, 18 Feb 2015) $'
+rev = '$Rev: 491 $'
+id = '$Id: usfm2osis.py 491 2015-02-18 08:27:48Z refdoc $'
 
 usfmVersion = '2.35'  # http://ubs-icap.org/chm/usfm/2.35/index.html
 osisVersion = '2.1.1' # http://www.bibletechnologies.net/osisCore.2.1.1.xsd
@@ -782,7 +782,7 @@ def convertToOsis(sFile):
         # \thr#_text...
         # \tc#_text...
         # \tcr#_text...
-        tType = {'th':' role="label"', 'thr':' role="label" type="x-right"', 'tc':'', 'tcr':' type="x-right'}
+        tType = {'th':' role="label"', 'thr':' role="label" type="x-right"', 'tc':'', 'tcr':' type="x-right"'}
         osis = re.sub(r'\\(thr?|tcr?)\d*\b\s*(.*?)(?=(\\t[hc]|</row))', lambda m: '<cell' + tType[m.group(1)] + '>' + m.group(2) + '</cell>', osis, flags=re.DOTALL)
 
         osis = re.sub(r'(<row>.*?</row>)(?=(['+'\uFDD0\uFDD1\uFDD3\uFDD4'+r']|\\tr\s|<(lb|title)\b))', r'<table>\1</table>', osis, flags=re.DOTALL)
@@ -1411,6 +1411,7 @@ def printUsage():
     print('  -e ENCODING      input encoding override (default is to read the USFM file\'s')
     print('                     \\ide value or assume UTF-8 encoding in its absence)')
     print('  -h, --help       print this usage information')
+    print('  -l LANGUAGE      input language code - (default "und")')
     print('  -o FILENAME      output filename (default is: <osisWork>.osis.xml)')
     print('  -r               enable relaxed markup processing (for non-standard USFM)')
     print('  -s mode          set book sorting mode: natural (default), alpha, canonical,')
@@ -1511,7 +1512,16 @@ if __name__ == "__main__":
             relaxedConformance = True
             bookDict = dict(list(bookDict.items()) + list(addBookDict.items()))
             inputFilesIdx += 1
-
+        
+        if '-l' in sys.argv:
+            i = sys.argv.index('-l')+1
+            if len(sys.argv) < i+1:
+                printUsage()
+                                    
+            language = sys.argv[i]
+            inputFilesIdx += 2 #increment 2, reflecting 2 args for -l   
+        else: language = 'und'
+        
         if '-s' in sys.argv:
             i = sys.argv.index('-s')+1
             if len(sys.argv) < i+1:
@@ -1567,7 +1577,7 @@ if __name__ == "__main__":
             osisSegment[k]=v
 
         print('Assembling OSIS document')
-        osisDoc = '<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.'+osisVersion+'.xsd">\n<osisText osisRefWork="Bible" xml:lang="und" osisIDWork="' + osisWork + '">\n<header>\n<work osisWork="' + osisWork + '"/>\n</header>\n'
+        osisDoc = '<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace http://www.bibletechnologies.net/osisCore.'+osisVersion+'.xsd">\n<osisText osisRefWork="Bible" xml:lang="' + language + '" osisIDWork="' + osisWork + '">\n<header>\n<work osisWork="' + osisWork + '"/>\n</header>\n'
 
         unhandledTags = set()
         for doc in usfmDocList:

@@ -13,10 +13,12 @@ Proofreading
 ------------
 
 The USFM source text may contain spelling mistakes.  You are welcome
-to proofread the text and report the issues.
+to proofread the text and report the issues.  There are few `wiki
+pages <https://github.com/tfbf/sathyavedapusthakam/wiki>`_ created to
+explain the process.
 
-SWORD module
-------------
+Creating SWORD module
+---------------------
 
 1. Install SWORD utilities and xiphos (Assuming Debian/Ubuntu is used)
 
@@ -51,50 +53,3 @@ SWORD module
    ::
 
      xiphos
-
-Malayalam Bible in Android
---------------------------
-
-(Credits for this instruction: Jeesmon Jacob)
-
-1. Install `AndBible <https://play.google.com/store/apps/details?id=net.bible.android.activity>`_ from Google Play Store
-2. Install `ES File Explorer <https://play.google.com/store/apps/details?id=com.estrongs.android.pop>`_ from Google Play Store. This App is for unzipping the module to a folder.
-3. Download `Malayalam SWORD module <http://www.tfbf.in/downloads/mal-0.1.zip>`_ to your device
-4. Open ES File Explorer and navigate to /sdcard folder. It might be the default folder when you open ES File Explorer.
-5. Click device menu -> New -> Folder. Name new folder as jsword (all lowercase)
-6. Navigate to Download folder. That's where the module is downloaded in Step 3.
-7. Long press (not just tap) on mal-0.1.zip file. It will pop up a menu with many options. Select "Extract to" menu option.
-8. Select "Choose path" option
-9. Type /sdcard/jsword as the path. Click Ok.
-10. Open AndBible and you will see Malayalam content (Change language to Malayalam from Menu).
-
-Malayalam Bible in GNU/Linux
-----------------------------
-
-1. Install Xiphos
-
-   ::
-
-     sudo apt-get install xiphos
-
-2. Download `Malayalam SWORD module <http://www.tfbf.in/downloads/mal-0.1.zip>`_ and extract it inside ``~/.sword`` directory.
-
-   ::
-
-     mkdir ~/.sword
-     cd ~/.sword
-     wget -c http://www.tfbf.in/downloads/mal-0.1.zip
-     unzip mal-0.1.zip
-
-3. Open Xiphos and you will see Malayalam content (Change language to Malayalam from left navigation).
-
-Malayalam Bible in Windows
---------------------------
-
-1. `Download Meera font <http://smc.org.in/downloads/fonts/meera/Meera.ttf>`_.  To install, just double-click on the ``Meera.ttf`` file.
-
-2. `Download Xiphos <http://sourceforge.net/projects/gnomesword/files/Xiphos/4.0.2/xiphos-4.0.2-20150415-win32.exe/download>`_ and install it. After installation open this program and explore the usage (read Help->Contents).
-
-3. `Download Malayalam SWORD module <http://www.tfbf.in/downloads/mal-0.1.zip>`_ and extract it to ``C:\ProgramData\Sword``. After extracting you should see two folders names ``mods.d`` and ``modules`` inside that.
-4. Edit-Preferences then Fonts->Sizes and Faces and select the ``Malayalam (ml)`` from the ``Font preferences, per language`` menu and you can select the Meera font and save it and close entire application.
-5. Open Xiphos again and you will see Malayalam content (Change language to Malayalam from left navigation).

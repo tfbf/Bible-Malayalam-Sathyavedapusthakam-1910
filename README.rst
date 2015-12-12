@@ -1,21 +1,16 @@
 Sathyavedapusthakam
 ===================
 
-This is the content of The Holy Bible translation into Malayalam
-language known as `Sathyavedapusthakam published by The British and Foreign Bible Society
-in 1910 <https://archive.org/details/Sathyavedapusthakam_1910>`_.  The
-source format used here is `USFM <http://paratext.org/about/usfm>`_.
-The text can be converted to other formats using USFM converters.
+This reposirory contains source of The Holy Bible translation into
+Malayalam language known as `Sathyavedapusthakam published by The
+British and Foreign Bible Society in 1910
+<https://archive.org/details/Sathyavedapusthakam_1910>`_.  The source
+format used here is `USFM <http://paratext.org/about/usfm>`_.  The
+text can be converted to other formats using USFM converters.
 
-* `Discussion Group <https://groups.google.com/forum/#!forum/tfbfgroup>`_
-
-Proofreading
-------------
-
-The USFM source text may contain spelling mistakes.  You are welcome
-to proofread the text and report the issues.  There are few `wiki
-pages <https://github.com/tfbf/sathyavedapusthakam/wiki>`_ created to
-explain the process.
+If you are interested to help this project, you can join our
+`discussion group
+<https://groups.google.com/forum/#!forum/tfbfgroup>`_
 
 Creating SWORD module
 ---------------------
@@ -48,7 +43,7 @@ Creating SWORD module
      mkdir -p ~/.sword/mods.d/
      cp conf/mal.conf ~/.sword/mods.d/
 
-5. Open Xiphos and verify Malayalam Bible is appearing
+5. Open Xiphos and verify Malayalam Bible is appearing properly
 
    ::
 

@@ -32,9 +32,12 @@ Creating SWORD module
    ::
 
      mkdir -p ~/.sword/modules/texts/ztext/mal/
-     osis2mod ~/.sword/modules/texts/ztext/mal/ mal.osis.xml -v MAL -z z
+     osis2mod ~/.sword/modules/texts/ztext/mal/ mal.osis.xml -v NRSV -z z
 
-   Note: In the old versions of `osis2mod` use `-z` option without `z` argument.
+   Note 1: In the old versions of `osis2mod` use `-z` option without `z` argument.
+   Note 2: The versification is selected as NRSV instead of KJV to include 3 John 1:15
+           Three more verses are still merged to previous verse:
+           Deuteronomy 13:19 - Deuteronomy 28:69 - Song of Solomon 7:14
 
 4. Copy configuration file
 

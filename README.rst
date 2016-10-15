@@ -12,6 +12,12 @@ If you are interested to help this project, you can join our
 `discussion group
 <https://groups.google.com/forum/#!forum/tfbfgroup>`_
 
+Modern Script
+-------------
+There is a separate branch where we maintain the text in the modern orthography (Currently ൎ > ർ).
+<https://github.com/tfbf/sathyavedapusthakam/tree/modernScript>
+
+
 Creating SWORD module
 ---------------------
 

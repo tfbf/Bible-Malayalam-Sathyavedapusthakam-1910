@@ -14,8 +14,8 @@ If you are interested to help this project, you can join our
 
 Modern Script
 -------------
-There is a separate branch where we maintain the text in the modern orthography (Currently ൎ > ർ).
-<https://github.com/tfbf/sathyavedapusthakam/tree/modernScript>
+There is a separate branch <https://github.com/tfbf/sathyavedapusthakam/tree/modernScript>`_ where we maintain the text in the modern orthography (Currently ൎ > ർ).
+
 
 
 Creating SWORD module

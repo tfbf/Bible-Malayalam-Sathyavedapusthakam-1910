@@ -5,8 +5,8 @@ This reposirory contains source of The Holy Bible translation into
 Malayalam language known as `Sathyavedapusthakam published by The
 British and Foreign Bible Society in 1910
 <https://archive.org/details/Sathyavedapusthakam_1910>`_.  The source
-format used here is `USFM <http://paratext.org/about/usfm>`_.  The
-text can be converted to other formats using USFM converters.
+text is formatted using `USFM <http://paratext.org/about/usfm>`_ markup.
+The text can be converted to other formats using USFM converters.
 
 If you are interested to help this project, you can join our
 `discussion group
@@ -14,9 +14,8 @@ If you are interested to help this project, you can join our
 
 Modern Script
 -------------
+
 There is a separate branch https://github.com/tfbf/sathyavedapusthakam/tree/modernScript where we maintain the text in the modern orthography (Currently ൎ > ർ).
-
-
 
 Creating SWORD module
 ---------------------

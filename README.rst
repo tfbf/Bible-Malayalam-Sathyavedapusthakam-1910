@@ -1,7 +1,7 @@
 Sathyavedapusthakam
 ===================
 
-This reposirory contains source of The Holy Bible translation into
+This repository contains source of The Holy Bible translation into
 Malayalam language known as `Sathyavedapusthakam published by The
 British and Foreign Bible Society in 1910
 <https://archive.org/details/Sathyavedapusthakam_1910>`_.  The source

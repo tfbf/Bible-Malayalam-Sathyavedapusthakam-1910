@@ -1,6 +1,7 @@
 :author: beniza
-:date: 12th April 2022
+:last modified: 12th April 2022
 :version: 1
+:source: `മലയാള ശൈലീപുസ്തകം`_
 
 Malayalam Style Guide (draft) ver.1
 ===================================
